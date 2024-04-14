@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+    @apply text-2 underline underline-offset-4 decoration-3 hover:opacity-80 hover:underline-offset-2 transition-all
+}
+
+.strokeText {
+  color: #101010;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: #e2e8f0; 
+  text-fill-color: transparent; 
+  -moz-text-stroke-width: 1px; 
+  -moz-text-stroke-color: #e2e8f0; 
+  text-stroke-width: 1px; 
+  text-stroke-color: #e2e8f0;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+  
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  @apply bg-[#5f6063] rounded-lg;
+}
+  
+.custom-scroll-bar::-webkit-scrollbar-track {
+  @apply bg-[#101010];
+}
